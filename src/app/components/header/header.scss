@@ -1,0 +1,78 @@
+/* Header Styles */
+header {
+  background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient background */
+  color: #fff;
+  padding: 15px 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Nav Links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Logout Button */
+nav button {
+  background: #ff5722; /* Orange-red button */
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+nav button:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

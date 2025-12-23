@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<h2>Task List</h2>
+
+<!-- Filters -->
+<select (change)="filterByStatus($event)" >
+<option value="" disabled selected>Select status</option>
+  <option value="All">All</option>
+  <option value="Pending">Pending</option>
+  <option value="In Progress">In Progress</option>
+  <option value="Completed">Completed</option>
+</select>
+
+<input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (input)="search()">
+
+<!-- Error -->
+<div *ngIf="error" style="color:red">{{ error }}</div>
+
+<!-- Task Table -->
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Show tasks if available -->
+    <tr *ngFor="let task of filteredTasks">
+      <td>{{ task.title }}</td>
+      <td>{{ task.description }}</td>
+      <td>{{ task.priority }}</td>
+      <td>{{ task.status }}</td>
+      <td>
+        <button class="edit-btn" (click)="editTask(task._id)">Edit</button>
+        <button class="delete-btn" (click)="deleteTask(task._id)">Delete</button>
+      </td>
+    </tr>
+
+    <!-- Show this row if no tasks -->
+    <tr *ngIf="filteredTasks.length === 0">
+      <td colspan="5" style="text-align:center; color: #888; font-style: italic;">
+        No tasks found.
+      </td>
+    </tr>
+  </tbody>
+</table>

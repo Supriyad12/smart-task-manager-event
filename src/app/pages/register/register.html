@@ -1,0 +1,50 @@
+<h2>Register</h2>
+
+<form (ngSubmit)="register()" #registerForm="ngForm">
+
+  <div class="form-group">
+    <label>Name</label>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      required
+      placeholder="Enter your name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input
+      type="email"
+      [(ngModel)]="email"
+      name="email"
+      required
+      placeholder="Enter your email"
+    />
+  </div>
+
+  <div class="form-group">
+    <label>Password</label>
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      required
+      minlength="6"
+      placeholder="Minimum 6 characters"
+    />
+  </div>
+
+  <button type="submit" [disabled]="registerForm.invalid">
+    Register
+  </button>
+
+</form>
+
+<!-- 👇 Login option -->
+<p class="login-link">
+  Already have an account?
+  <span class="login-span-link" (click)="log()">Login</span>
+</p>
+

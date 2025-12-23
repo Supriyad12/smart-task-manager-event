@@ -1,0 +1,118 @@
+/* Page title */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form container */
+form {
+  max-width: 420px;
+  margin: 60px auto 20px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 22px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: #999;
+}
+
+/* Focus effect */
+input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
+  outline: none;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: #28a745;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Disabled button */
+button:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Login link */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Login anchor */
+.login-link a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  form {
+    margin: 40px 15px;
+    padding: 30px 20px;
+  }
+}
+.login-span-link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-span-link:hover {
+  color: #0056b3;
+}
