@@ -16,8 +16,10 @@ createdAt: string | number | Date;
 })
 export class AuthService {
 
-  private authUrl = 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/auth';
-  private taskUrl = 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/tasks';
+//  private authUrl = 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/auth';
+//  private taskUrl = 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/tasks';
+ private authUrl = 'https://smart-task-manager-event-f-ewg3.vercel.app/auth';
+  private taskUrl = 'https://smart-task-manager-event-f-ewg3.vercel.app/tasks';
 
   constructor(private http: HttpClient) { }
 
