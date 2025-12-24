@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/'  // your live backend
+//  apiUrl: 'https://backend-31kk5g4ob-supriyad12s-projects.vercel.app/'  // your live backend
+   apiUrl: 'https://smart-task-manager-event-f-ewg3.vercel.app/'  // your live backend
 };
